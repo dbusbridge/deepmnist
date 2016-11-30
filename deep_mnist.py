@@ -4,9 +4,8 @@ import networks
 import trainer
 
 # Device to use, either '/cpu:<x>' or '/gpu:<x>'
-#DEVICE = '/cpu:0'
+# DEVICE = '/cpu:0'
 DEVICE = '/gpu:0'
-
 
 # Start the session
 sess = tf.InteractiveSession()
@@ -37,5 +36,6 @@ for i in range(500):
     train_step.run(feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
 
 # Print out accuracy on the training set
-print("test accuracy %g"%accuracy.eval(feed_dict={
-    x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
+print("test accuracy {acc}".format(
+    acc=accuracy.eval(feed_dict={
+        x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0})))
