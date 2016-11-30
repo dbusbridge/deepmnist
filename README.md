@@ -2,29 +2,28 @@
 
 ## Introduction
 
-This repo is a refactoring of the code found in the `TensorFlow r0.12` [deep mnist for experts tutorial](https://www.tensorflow.org/versions/r0.12/tutorials/mnist/pros/index.html#deep-mnist-for-experts).
+This repo is a refactoring of the code found in the `TensorFlow r0.12` [deep mnist for experts tutorial](https://www.tensorflow.org/versions/r0.12/tutorials/mnist/pros/index.html#deep-mnist-for-experts). I created this as a more verbose and spit apart version of the tutorial code so that I could better understand the components.
 
 ## Dependencies
 
-+ Conda.
++ An anaconda or miniconda distribution.
 
 ## Setup
 
-
-1. Clone the repo
+### Clone the repo
 
 ```
 $ git clone https://github.com/dbusbridge/deepmnist.git
 ```
 
-2. Create the conda environment
+### Create the conda environment
 
 ```
 $ cd deepmnist
 $ conda env create
 ```
 
-3. Have fun!
+### Have fun!
 
 ```
 $ source activate tensorflow_12_gpu
