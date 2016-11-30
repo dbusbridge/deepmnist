@@ -23,7 +23,7 @@ x, y_, y_conv, keep_prob = networks.multilayer_convnet(device=DEVICE)
 
 # The session
 sess.run(tf.global_variables_initializer())
-for i in range(500):
+for i in range(20000):
     batch = mnist.train.next_batch(50)
     if i % 100 == 0:
         train_accuracy = accuracy.eval(
