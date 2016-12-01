@@ -4,8 +4,8 @@ import networks
 import trainer
 
 # Device to use, either '/cpu:<x>' or '/gpu:<x>'
-# DEVICE = '/cpu:0'
-DEVICE = '/gpu:0'
+DEVICE = '/cpu:0'
+# DEVICE = '/gpu:0'
 
 # Start the session
 sess = tf.InteractiveSession()
